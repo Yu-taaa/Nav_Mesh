@@ -17,7 +17,7 @@ public class PlayerScript : MonoBehaviour {
 	void Update () {
 		agent.SetDestination (target.position);
 
-		if (Vector3.Distance(transform.position, target.position) < 1) {
+		if (Vector3.Distance(transform.position, target.position) < 3) {
 			if (currentTarget < targets.Length - 1) {
 				currentTarget += 1;
 			}
